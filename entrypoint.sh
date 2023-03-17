@@ -1,9 +1,5 @@
 #!/bin/bash
 
-if [ -z "$email" ]; then
-    echo -e "email is not set, exit."
-    exit 1
-fi
 # if use_proxy from env is set to true, then set proxy
 if [ "${use_proxy}" = true ]; then
     # check whether proxychains4.conf exists
